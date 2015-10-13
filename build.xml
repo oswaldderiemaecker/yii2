@@ -2,15 +2,6 @@
 
 <project name="contexts" default="help">
 
-    <!-- If `build.properties.local` exists then we want it badly -->
-    <if>
-        <available file="build.properties.local" />
-        <then>
-            <property file="build.properties.local" />
-        </then>
-    </if>
-    <property file="build.properties"/>
-
     <target name="create-test-database" description="create yii2 testing database">
       <exec command="mysql -e 'CREATE DATABASE yiitest;';" />
       <exec command="psql -U postgres -c 'CREATE DATABASE yiitest;';" />
