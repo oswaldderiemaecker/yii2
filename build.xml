@@ -11,7 +11,7 @@
     </if>
     <property file="build.properties"/>
 
-    <target name="create-database" description="create yii2 database">
+    <target name="create-test-database" description="create yii2 testing database">
       <exec command="mysql -e 'CREATE DATABASE yiitest;';" />
       <exec command="psql -U postgres -c 'CREATE DATABASE yiitest;';" />
     </target>
