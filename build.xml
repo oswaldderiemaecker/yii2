@@ -3,7 +3,7 @@
 <project name="contexts" default="help">
 
     <target name="create-test-database" description="create yii2 testing database">
-      <exec command="mysql -e 'CREATE DATABASE yiitest;';" />
+      <exec command="mysql -u root -e 'CREATE DATABASE yiitest;';" />
       <exec command="psql -U postgres -c 'CREATE DATABASE yiitest;';" />
     </target>
 
