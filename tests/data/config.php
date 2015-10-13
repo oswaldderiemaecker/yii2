@@ -23,7 +23,7 @@ $config = [
         ],
         'mysql' => [
             'dsn' => 'mysql:host=127.0.0.1;dbname=yiitest',
-            'username' => 'travis',
+            'username' => 'root',
             'password' => '',
             'fixture' => __DIR__ . '/mysql.sql',
         ],
@@ -40,7 +40,7 @@ $config = [
         'pgsql' => [
             'dsn' => 'pgsql:host=localhost;dbname=yiitest;port=5432;',
             'username' => 'postgres',
-            'password' => 'postgres',
+            'password' => '',
             'fixture' => __DIR__ . '/postgres.sql',
         ],
     ],
